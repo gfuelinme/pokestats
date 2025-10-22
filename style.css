@@ -32,7 +32,7 @@ main {
 
 .formulario-busqueda > input {
     margin-left: 30px;
-    width: 800px;
+    width: 790px;
     height: 24px;
     border: none;
     border-radius: 5px;
@@ -65,17 +65,32 @@ main {
 .contenedor-pokemon {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     border: 1px solid #dddbdb;
     border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, transparent 40%,rgba(245, 243, 243, 0.7) 100%);
     margin: 30px;
     width: 300px;
     height: 415px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom, transparent 40%,rgba(245, 243, 243, 0.7) 100%);
 }
 
+.imagenPokemon {
+  display: block;
+  margin-top: 30px;
+  width: 250px;
+  height: auto;
+}
+
+.idPokemon {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  margin-bottom: 60px;
+  color: #e8e6e6;
+}
 
 .contenedor-stats {
     display: flex;
@@ -92,7 +107,6 @@ main {
 .stat-hp {
   display: flex;
   flex: 1;
-  flex-direction: row;
   background: linear-gradient(to right,transparent 40%, rgba(76, 175, 80, 0.8) 100%);
   border-bottom: 1px solid #f0eded;
   padding: 10px;
@@ -141,4 +155,52 @@ main {
 .icon {
   margin-left: auto;
   margin-right: 20px;
+}
+
+.stat-hp > p {
+  color: #8dda86;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.stat-atq > p {
+  color: #f89898;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.stat-dfn > p {
+  color: #98bdf9;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.stat-vel > p {
+  color: #f5f898;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.stat-atq-esp > p {
+  color: #edaff9;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.stat-dfn-esp > p {
+  color: #daaef7;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
 }
