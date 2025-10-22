@@ -13,40 +13,40 @@
             <form class="formulario-busqueda">
                 <input type="text" name="caja" id="caja" placeholder="Ingresa el nombre del Pokemon">
                 <button name="buscar" id="buscar">Buscar</button>
+                <button name="random" id="random">Random</button>
             </form>
         </div>
     </header>
 
     <main>
         <div class="contenedor-pokemon">
-            <p id="idPokemon">ID</p>
-            <img id="imagenPokemon" src="" alt="Pokemon">
-            <p id="nombrePokemon">Nombre</p>
+            <img class="imagenPokemon" id="imagenPokemon" src="">
+            <p class="idPokemon" id="idPokemon"></p>
         </div>
 
         <div class="contenedor-stats">
             <div class="stat-hp">
-                <p>HP</p>
+                <p id="saludPokemon"></p>
                 <img class="icon" src="assets/hp-icon.png" alt="Salud">
             </div>
             <div class="stat-atq">
-                <p>Ataque</p>
+                <p id="ataquePokemon"></p>
                 <img class="icon" src="assets/atq-icon.png" alt="Ataque">
             </div>
             <div class="stat-dfn">
-                <p>Defensa</p>
+                <p id="defensaPokemon"></p>
                 <img  class="icon" src="assets/dfn-icon.png" alt="Defensa">
             </div>
             <div class="stat-vel"> 
-                <p>Velocidad</p>
+                <p id="velocidadPokemon"></p>
                 <img  class="icon" src="assets/vel-icon.png" alt="Velocidad">
             </div>
             <div class="stat-atq-esp">
-                <p>Ataque Especial</p>
+                <p id="ataqueEspecialPokemon"></p>
                 <img  class="icon" src="assets/atq-esp-icon.png" alt="Ataque Especial">
             </div>
             <div class="stat-dfn-esp">
-                <p>Defensa Especial</p>
+                <p id="defensaEspecialPokemon"></p>
                 <img  class="icon" src="assets/dfn-esp-icon.png" alt="Defensa Especial">
             </div>
         </div>
