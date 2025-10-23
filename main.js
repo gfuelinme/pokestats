@@ -2,6 +2,7 @@ const inputNombre = document.getElementById("caja")
 const botonBuscar = document.getElementById("buscar")
 const botonRandom = document.getElementById("random");
 
+const audioPokemon = document.getElementById("audioPokemon")
 const imagenPokemon = document.getElementById("imagenPokemon")
 const idPokemon = document.getElementById("idPokemon")
 
@@ -17,6 +18,7 @@ async function buscarPokemon() {
     const respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/" + inputNombre.value)
     const infoPokemon = await respuesta.json()
 
+    audioPokemon.src = infoPokemon.cries.latest
     imagenPokemon.src = infoPokemon.sprites.other["official-artwork"].front_default
     idPokemon.innerHTML = "#" + infoPokemon.id
 
